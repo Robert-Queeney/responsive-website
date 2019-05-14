@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script> 
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black')
+            }
+        });
+    </script>
+    <title>Robert's Radical Website</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./QueeneyLogo.png" alt="Queeney Logo">
+            </div>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2 class="section-title">Great websites. No hassle. Minimal fees</h2>
+        </section>
+        <section class="intro">
+            <h2 class="section-title">I am Minneapolis' first
+                <span class="text-primary">web developer</span> from
+                <span class="text-primary">my family,</span> ever!
+            </h2>
+        </section>
+
+        <section class="about-us">
+            <header class="about-us__intro">
+                <h2 class="section-title-small  ">Consequat ut proident consectetur in excepteur est magna ullamco
+                    pariatur
+                    irure ex ullamco veniam ea.</h2>
+            </header>
+            <div class="about-us__body">
+                <p>Commodo eu labore deserunt voluptate est sint anim occaecat. In cupidatat sint nostrud cupidatat ex
+                    do sint. Reprehenderit consectetur sunt ut sunt sint ipsum laboris. Aute nisi Lorem laboris nisi
+                    labore nulla duis deserunt aute aute qui est laboris do. Ex eu amet nisi ex Lorem enim et culpa
+                    excepteur esse reprehenderit enim officia eu. Eu enim ad fugiat ad magna pariatur magna mollit.</p>
+                <p>Minim quis elit ullamco Lorem ullamco officia. Elit ut velit laboris officia id nisi. Incididunt
+                    irure consectetur id incididunt ipsum sint est quis enim sit magna consectetur eu. Adipisicing duis
+                    proident ut in ea fugiat.</p>
+            </div>
+        </section>
+
+        <!-- carousel -->
+
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden">
+                left button
+            </button>
+            <div class="carousel__track-container">
+                <div class="carousel__header"><h2>See what people are saying:</h2></div>
+                <ul class="carousel__track">
+                    <div class="carousel__slide current-slide">
+                        <div class="carousel__content"><h3>"Robert is a wonderful sales rep.   Wait, did he switch careers?  Front end development?  ##$%^*!!!"</h3><p>-- my wife</p></div>
+                    </div>
+                    <div class="carousel__slide">
+                        <div class="carousel__content"><h3>"My dad said I could have a fruit bar if I was a good listener.  Can I have it?"</h3><p>-- my 4 year old</p></div>
+                    </div>
+                    <div class="carousel__slide">
+                        <div class="carousel__content"><h3>"Dada, gimme baba.......All done! Pee pee poo poo."</h3><p>-- my 1 1/2 year old</p></div>
+                    </div>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+                right button
+            </button>
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
+
+        <section class="order-online">
+            <header>
+                <h2 class="section-title text-primary">Get a quote</h2>
+            </header>
+            <p>Lorem aliquip adipisicing proident ex sint excepteur commodo exercitation reprehenderit ut voluptate
+                quis. Do do cupidatat quis irure nisi culpa mollit culpa nisi Lorem. Aute consectetur nisi elit deserunt
+                veniam occaecat.</p>
+            <div class="btn-group">
+                <a href="" class="btn btn-primary">Email</a>
+                <a href="" class="btn btn-primary">LinkedIn</a>
+                <a href="" class="btn btn-primary">GitHub</a>
+            </div>
+
+        </section>
+
+        <section class="product-showcase">
+            <header>
+                <h2 class="section-title text-primary">Check out these products!</h2>
+            </header>
+            <div class="products">
+                <div class="product">
+                        <img src='http://loremflickr.com/900/900/vacation' alt='' class="product__img"/>
+                        <div class="product__content">
+                    <h3 class="product__title">Product #1</h3>
+                    
+                    <p>Veniam anim nulla reprehenderit aliqua proident proident. Qui deserunt qui mollit est culpa
+                        consectetur pariatur consectetur labore. Anim sint non nostrud elit. Ex laboris est nisi aliqua
+                        ea veniam.</p>
+                    <p>Ut amet voluptate velit anim commodo est exercitation consectetur deserunt ut ipsum dolore. Nisi
+                        magna sunt ipsum cupidatat quis laborum.</p>
+                        </div>
+                </div>
+                <div class="product">
+                        <img src='http://placeskull.com/900/900' alt='skull' class="product__img"/>
+                        <div class="product__content">
+                    <h3 class="product__title">Product #2</h3>
+                    
+                    <p>Dolore commodo culpa nostrud ut. Enim tempor commodo adipisicing et dolore exercitation aute.
+                        Ipsum non sint voluptate exercitation qui tempor velit ipsum occaecat irure duis velit aliquip.
+                    </p>
+                    <p>Exercitation nisi dolore deserunt mollit quis mollit eu amet eiusmod nostrud anim.</p>
+                    </div>
+                </div>
+                <div class="product">
+                        <img src='http://loremflickr.com/green/900/900/kids' alt=''class="product__img"/>
+                    <div class="product__content">
+                        <h3 class="product__title">Product #3</h3>
+                        
+                        <p>Sit sunt adipisicing eu sit Lorem adipisicing est eiusmod duis.</p>
+                        <p>Laborum minim culpa Lorem ut dolore pariatur qui nulla consectetur eu nostrud amet in.
+                            Exercitation Lorem eu officia ut id occaecat dolor consectetur irure adipisicing labore.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                    <a href="" class="btn btn-accent">See all my work</a>
+                </div>
+                <p class="btn-group__intro mb-0">Or connect via: </p>
+                <div class="btn-group">
+                    
+                        <a href="" class="btn btn-primary">Order via Email</a>
+                        <a href="" class="btn btn-primary">Order via LinkedIn</a>
+                        <a href="" class="btn btn-primary">Order via GitHub</a>
+                </div>
+
+        </section>
+
+    </main>
+    <footer>
+            <ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Connect</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in fa-2x social-icon"></i></a></li>
+                <li><a href="https://github.com/Robert-Queeney"><i class="fab fa-github fa-2x   social-icon"></i></a></li>
+            </ul>
+        </footer>
+        <script src="./carousel.js"></script>
+</body>
+
+</html>
